@@ -1,0 +1,29 @@
+@url=http://127.0.0.1:3001/api
+@json = Content-Type: application/json
+
+
+### 查看所有用户
+GET {{url}}/users
+
+### 注册
+POST {{url}}/register
+{{json}}
+
+{
+    "username":"damage",
+    "password":"damage"
+}
+
+### 登录
+POST {{url}}/login
+{{json}}
+
+{
+    "username":"damage",
+    "password":"damage"
+}
+
+
+###return user
+GET {{url}}/profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYmJhYjVjMmVjZGYwOGNiYmYyNzRhMyIsImlhdCI6MTYzOTY4OTQ4N30.kqHx6WMQCHmWfP1EgRx3TahmrFTLMJ0G7pNzmIjW19Q
