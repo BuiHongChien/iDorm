@@ -52,15 +52,21 @@ app.post('/api/login',async(req,res)=>{
     },SECRET)
 
     res.send({
-        user,
+        username :user.username,
         token
     })
 }) 
 
-app.get('/api/profile',async(req,res)=>{
+const auth = async(req,res,next)=>{
     const raw = String(req.headers.authorization).split(" ").pop()
     const {id} = jwt.verify(raw,SECRET)
-    const user = await User.findById(id)
+    req.user = await User.findById(id)
+    //TODO(错误处理)
+    next()
+}
+
+app.get('/api/profile',auth,async(req,res)=>{
+
     res.send(user)
 })
 
