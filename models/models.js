@@ -39,13 +39,16 @@ const Room = mongoose.model("Room",RoomSchema)
 
 
 const Building = mongoose.model("Building",new mongoose.Schema({
-    buildingName:{type:String},
+    buildingName:{type:String,unique:true},
     address:{type:String}
 }))
 
 
-
+const RoomRecommend = mongoose.model("RoomRecommend",new mongoose.Schema({
+    personId:{type:String},
+    roomId:{type:String}
+}))
 
 
 //User.db.dropCollection("users")
-module.exports = { User , Room,Building } 
+module.exports = { User , Room,Building,RoomRecommend } 

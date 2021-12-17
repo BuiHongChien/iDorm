@@ -20,7 +20,6 @@ POST {{url}}/register
     "country":"China",
     "pet":"1 cat",
     "special":"Cleanliness Not sleep at night"
-    
 }
 
 ### 登录
@@ -34,5 +33,12 @@ POST {{url}}/login
 
 
 ###return user
-GET {{url}}/profile
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYmNjNzU1ZjkxZWZkZTU1YjkwNjc1MSIsImlhdCI6MTYzOTc2MTc1MX0.908GWGzd-3PWxjDQRjBDAd-dVQ9LLqkxHXGgoMLrthg
+GET {{url}}/buildings
+
+
+###return user
+GET {{url}}/rooms?buildingId=
+
+
+###return user
+GET {{url}}/
