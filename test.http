@@ -10,8 +10,17 @@ POST {{url}}/register
 {{json}}
 
 {
-    "username":"damage",
-    "password":"damage"
+    "fullname" : "TianQi",
+    "username":"user1",
+    "password":"password",
+    "age":24,
+    "gender":"female",
+    "email":"123@itmo.ru",
+    "phone":"123312",
+    "country":"China",
+    "pet":"1 cat",
+    "special":"Cleanliness Not sleep at night"
+    
 }
 
 ### 登录
@@ -19,11 +28,11 @@ POST {{url}}/login
 {{json}}
 
 {
-    "username":"damage",
-    "password":"damage"
+    "username":"user1",
+    "password":"password"
 }
 
 
 ###return user
 GET {{url}}/profile
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYmJhYjVjMmVjZGYwOGNiYmYyNzRhMyIsImlhdCI6MTYzOTY4OTQ4N30.kqHx6WMQCHmWfP1EgRx3TahmrFTLMJ0G7pNzmIjW19Q
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYmNjNzU1ZjkxZWZkZTU1YjkwNjc1MSIsImlhdCI6MTYzOTc2MTc1MX0.908GWGzd-3PWxjDQRjBDAd-dVQ9LLqkxHXGgoMLrthg
