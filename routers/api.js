@@ -39,7 +39,7 @@ router.post('/login',async(req,res)=>{
     if(!user){
         return res.sendStatus(422)
     }
-    const isPasswordValid = require("bcrypt").compareSync(req.body.password,user.password)
+    const isPasswordValid = require("bcryptjs").compareSync(req.body.password,user.password)
     if(!isPasswordValid){
         return res.sendStatus(422)
     }

@@ -37,7 +37,7 @@ GET {{url}}/buildings
 
 
 ###return user
-GET {{url}}/rooms?buildingId=
+GET {{url}}/rooms?buildingId=61bd08627869a0fa8a18c911
 
 
 ###return user

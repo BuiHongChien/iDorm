@@ -14,11 +14,11 @@ Building.db.dropCollection("buildings");
 (async () =>{
         
         //创建一个管理员
-await User.create({
-    "username":"tianqi",
-    "password":"tianqi",
-    "role":"admin"
-})
+        await User.create({
+            username:"tianqi",
+            password:"tianqi123",
+            role:"admin"
+        })
 //三个宿舍
 await Building.create({
 "buildingName":"DormA",

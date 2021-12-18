@@ -8,7 +8,7 @@ const UserSchema =new mongoose.Schema({
     fullname:{type:String},
     username:{type:String,unique:true},
     password:{type:String,set(val){
-        return require("bcrypt").hashSync(val,10)
+        return require("bcryptjs").hashSync(String(val).toString(),10)
     }},
     age:{type:Number},
     gender:{type: String},
@@ -17,7 +17,8 @@ const UserSchema =new mongoose.Schema({
     country:{type:String},
     pet:{type:String},
     special:{type:String},
-    role:{type:String,default:"user"}
+    role:{type:String,default:"user"},
+    living:{type:String}
     
 })
 
