@@ -1,0 +1,66 @@
+@import "./variables";
+
+.layout {
+  position: relative;
+  padding: 5rem 5rem;
+
+  &__home{
+    font-family: 'Montserrat Alternates', sans-serif;
+  }
+
+  &__bg {
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba($color-white, 0.2);
+    backdrop-filter: blur(3px);
+
+    &--home{
+        background-color: rgba($color-white, 0.7);
+    backdrop-filter: blur(9px);
+    }
+  }
+
+  &__container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  &__part {
+    position: absolute;
+    height: 80vh;
+    text-align: center;
+  }
+
+  &__left {
+    top: 0;
+    left: 0;
+    width: 50vw;
+    
+  }
+
+  &__right {
+    top: 0;
+    right: 0;
+    width: 37vw;
+    display: flex;
+    align-items: center;
+  }
+
+  &__body{
+    position: absolute;
+    left: 0;
+    top: 9.1vh;
+
+    width: 100%;
+    height: 90.9vh;
+  }
+
+}
+
+.layouthome {
+}

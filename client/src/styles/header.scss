@@ -1,0 +1,40 @@
+@import "./variables";
+
+.header {
+  &__wrapper {
+    position: sticky;
+    left: 0;
+    top: 0;
+  }
+  &__sticky-wrapper {
+    position: relative;
+    height: 9.1vh;
+  }
+  
+  &__sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+  &__container {
+    position: relative;
+    width: 100vw;
+    height: 9.1vh;
+
+    background-color: rgba($color-primary, 1);
+  }
+
+  &__right{
+      position: absolute;
+      top: 0;
+      right: 4%;
+      height: 100%;
+      width: auto;
+
+      display: flex;
+      align-items: center;
+  }
+}

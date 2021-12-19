@@ -1,0 +1,10 @@
+@mixin scale-animation($name, $scale) {
+    @keyframes #{$name} {
+      0% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale($scale);
+      }
+    }
+  }
